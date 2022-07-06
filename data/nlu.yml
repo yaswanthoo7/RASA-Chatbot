@@ -1,0 +1,116 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: supply_info
+  examples: |
+    - My name is [Keshav](name). i am in [first](year_of_study) year.
+    - This is [Anushka](name) from [second](year_of_study) year.
+    - Yeah , it's [Rahul](name), [sophomore](year_of_study) year.
+    - Sure. It's [Avichal](name). I am studying in [third](year_of_study) year.
+    - name: [David](name) year: [fourth](year_of_study)
+    - Yeah sure. I'm [Barbara](name). Im a  [first](year_of_study) year student.
+    - [Susan](name), [second](year_of_study) year.
+        
+  
+- intent: intro_ml
+  examples:  |
+    - what is machine learning?
+    - what is ml?
+    - Explain ml
+
+- intent: how_to_start
+  examples:  |
+    - how do i start learning machine learning?
+    - how should i start with ml?
+    - how do start learning ml for free?
+    - what are the good resources on the internet to study ml?

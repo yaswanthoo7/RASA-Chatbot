@@ -1,0 +1,50 @@
+version: "3.0"
+
+stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+
+
+
+- story: guide with ml
+  steps:
+  - intent: greet
+  - action: utter_ask_for_info
+  - intent: supply_info
+    entities:
+    - name
+    - year_of_study
+  - action: utter_greet
+  - intent: intro_ml
+  - action: utter_ml_defenition
+  - intent: how_to_start
+  - action: utter_ai_course
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy

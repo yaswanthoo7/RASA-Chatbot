@@ -1,0 +1,69 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - supply_info
+  - intro_ml
+  - how_to_start
+
+entities:
+- name
+- year_of_study
+
+
+slots:
+  name:
+    type: text
+    mappings:
+     - type: from_entity
+       entity: name
+  year_of_study:
+    type: text
+    mappings:
+     - type: from_entity
+       entity: year_of_study
+
+responses:
+  
+  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+  utter_ask_for_info:
+  - text: Hello! Could you please tell me your name and year of study?
+
+  utter_greet:
+  - text: "sup {name}? How could i help you?"
+
+  utter_ml_defenition:
+  - text: "Machine learning is the study of computer algorithms that can improve automatically through experience and by the use of data. It is seen as a part of artificial intelligence."
+
+  utter_ai_course:
+  - text: "A great place to start with is the Summer AI Course by IITG.aI.Check it out at https://www.iitg.ac.in/sa/ai/#/course/week1"
+    
+    
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
